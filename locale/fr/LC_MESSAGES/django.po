@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-20 22:15+0100\n"
+"POT-Creation-Date: 2023-12-21 11:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
 #: accounts/admin.py:39
 msgid "Informations personnelles"
 msgstr ""
@@ -53,19 +54,19 @@ msgstr ""
 msgid "Comptes utilisateurs"
 msgstr ""
 
-#: accounts/managers.py:8
+#: accounts/managers.py:10
 msgid "Veuillez fournir une adresse mail s'il vous plaît!"
 msgstr ""
 
-#: accounts/managers.py:11
+#: accounts/managers.py:13
 msgid "Veuillez fournir un nom d'utilisateur s'il vous plaît!"
 msgstr ""
 
-#: accounts/managers.py:14
+#: accounts/managers.py:16
 msgid "Email déjà en cours d'utilisation"
 msgstr ""
 
-#: accounts/managers.py:17
+#: accounts/managers.py:19
 msgid "Nom d'utilisateur déjà en cours d'utilisation"
 msgstr ""
 
@@ -89,7 +90,7 @@ msgstr ""
 msgid "Nom de famille"
 msgstr ""
 
-#: accounts/models.py:25
+#: accounts/models.py:25 core/templates/register.html:51
 msgid "Nom d'utilisateur"
 msgstr ""
 
@@ -105,7 +106,8 @@ msgid ""
 "et @/./+/-/_"
 msgstr ""
 
-#: accounts/models.py:32 newsletter/models.py:6
+#: accounts/models.py:32 core/templates/login.html:38
+#: core/templates/register.html:39 newsletter/models.py:6
 msgid "Adresse électronique"
 msgstr ""
 
@@ -259,7 +261,8 @@ msgstr ""
 msgid "Pseudo"
 msgstr ""
 
-#: accounts/v1/views.py:133
+#: accounts/v1/views.py:133 core/templates/login.html:50
+#: core/templates/register.html:63
 msgid "Mot de passe"
 msgstr ""
 
@@ -404,11 +407,11 @@ msgstr ""
 msgid "Commentaire supprimé avec succès"
 msgstr ""
 
-#: blogger_api/settings.py:267
+#: blogger_api/settings.py:267 templates/public/base.html:62
 msgid "Français"
 msgstr ""
 
-#: blogger_api/settings.py:268
+#: blogger_api/settings.py:268 templates/public/base.html:58
 msgid "Anglais"
 msgstr ""
 
@@ -472,7 +475,17 @@ msgstr ""
 msgid "Site d'administration de {settings.SITE_NAME}"
 msgstr ""
 
-#: core/templates/home.html:6 templates/public/base.html:24
+#: core/decorators.py:11
+msgid ""
+"Vous ne pouvez pas vous connecter ou vous insrire à nouveau car vous êtes "
+"déjà en ligne"
+msgstr ""
+
+#: core/forms.py:77
+msgid "Les deux mots de passe ne concordent pas!"
+msgstr ""
+
+#: core/templates/home.html:6 templates/public/base.html:26
 msgid "Accueil"
 msgstr ""
 
@@ -536,6 +549,67 @@ msgstr ""
 msgid "Admin"
 msgstr ""
 
+#: core/templates/login.html:6 core/templates/login.html:79
+#: templates/public/base.html:42
+msgid "Connexion"
+msgstr ""
+
+#: core/templates/login.html:33 core/templates/register.html:114
+msgid "Connectez-vous"
+msgstr ""
+
+#: core/templates/login.html:65 core/templates/register.html:90
+msgid "Afficher le mot de passe"
+msgstr ""
+
+#: core/templates/login.html:88
+msgid "Créez"
+msgstr ""
+
+#: core/templates/login.html:90
+msgid "un compte admin"
+msgstr ""
+
+#: core/templates/register.html:6 core/templates/register.html:104
+msgid "Inscription"
+msgstr ""
+
+#: core/templates/register.html:34
+msgid "Créez votre compte admin"
+msgstr ""
+
+#: core/templates/register.html:75
+msgid "Confirmer"
+msgstr ""
+
+#: core/templates/register.html:112
+msgid "Vous avez déjà un compte ?"
+msgstr ""
+
+#: core/views.py:71
+msgid "Bon retour à vous!"
+msgstr ""
+
+#: core/views.py:82
+msgid "Mot de passe ou email incorrect!"
+msgstr ""
+
+#: core/views.py:88 core/views.py:142
+msgid "{error.capitalize()}: {msg}"
+msgstr ""
+
+#: core/views.py:103
+msgid "Vous vous êtes déconnecté(e) avec succès. À bientôt !"
+msgstr ""
+
+#: core/views.py:130
+msgid "Compte admin créé avec succès!"
+msgstr ""
+
+#: core/views.py:135
+msgid "Veuillez vous connecter pour accéder à votre tableau de bord !"
+msgstr ""
+
 #: docs/views.py:13
 #, python-brace-format
 msgid ""
@@ -572,4 +646,8 @@ msgstr ""
 
 #: newsletter/v1/views.py:105
 msgid "Newsletter supprimé avec succès !"
+msgstr ""
+
+#: templates/public/base.html:36
+msgid "Déconnexion"
 msgstr ""

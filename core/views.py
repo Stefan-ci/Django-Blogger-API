@@ -68,7 +68,7 @@ def login_view(request):
             user = authenticate(request, email=email, password=password)
             if user is not None and user.is_active:
                 login(request, user)
-                messages.success(request, _(f"Bon retour à vous, {str(user.username).capitalize()})"))
+                messages.success(request, _("Bon retour à vous!"))
                 
                 # You may send login alert (using celery for example)
 
@@ -133,7 +133,7 @@ def register_view(request):
                 return redirect("/")
             else:
                 messages.info(request, _("Veuillez vous connecter pour accéder à votre tableau de bord !"))
-                return redirect("core:login") # Return to login page if user is None or user is inactive
+                return redirect("templates-core:login")
         
         else:  # if not form.is_valid()
             errors = form.errors.as_data()
