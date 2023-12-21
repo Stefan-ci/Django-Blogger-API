@@ -1,0 +1,29 @@
+{
+    "name": "Django Blogger API",
+    "short_name": "Dj Blog API",
+    "theme_color": "#ec4d29",
+    "background_color": "#ec4d29",
+    "description": "API minimaliste d'un exemple de blog personnel. Seules quelques fonctionnalités basiques ont été prises en compte.",
+    "display": "standalone",
+    "dir": "auto",
+    "lang": "fr",
+    "scope": "/",
+    "orientation": "portrait",
+    "start_url": "/",
+    "id": "/static/assets/favicon/",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "\/static/assets/favicon/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image\/png",
+            "density": "0.75"
+        },
+        {
+            "src": "\/static/assets/favicon/android-chrome-512x512.jpg",
+            "sizes": "512x512",
+            "type": "image\/jpg",
+            "density": "1.0"
+        }
+    ]
+}

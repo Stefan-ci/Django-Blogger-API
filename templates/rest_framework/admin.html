@@ -1,0 +1,25 @@
+{% extends "rest_framework/admin.html" %}
+
+{% block head %}
+    {{ block.super }}
+    {% include "public/favicon.html" %}
+    <style>
+        html,
+        body {
+            font-weight: 400 !important;
+            font-size: 13px !important;
+            letter-spacing: 0.5px !important;
+            line-height: 25px !important;
+        }
+    </style>
+    {% block title %}
+        {% if name %} {{ name }} – {% endif %} {{ site_name }}
+    {% endblock %}
+{% endblock %}
+
+
+{% block branding %}
+    <a class="navbar-brand" rel="nofollow" href="{% url 'templates-core:home' %}">
+        {{ site_name }}
+    </a>
+{% endblock %}

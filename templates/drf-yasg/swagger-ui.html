@@ -1,0 +1,23 @@
+{% extends "drf-yasg/swagger-ui.html" %}
+
+{% block title %}
+    {{ site_name }}: UI Documentation
+{% endblock %}
+
+{% block favicon %}
+    {% include "public/favicon.html" %}
+{% endblock %}
+
+{% block session_auth_button %}
+    {% csrf_token %}
+
+    {% block user_context_message %}
+        {% if request.user.is_authenticated %}
+            <div class="hello">
+                <span class="label label-primary">
+                    {{ request.user }}
+                </span>
+            </div>
+        {% endif %}
+    {% endblock %}
+{% endblock %}

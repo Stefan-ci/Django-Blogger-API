@@ -1,0 +1,74 @@
+{% extends "public/base.html" %}
+
+{% load i18n %}
+
+{% block title %}
+    {% trans "Accueil" %} :: {{ site_name }}
+{% endblock title %}
+
+
+{% block content %}
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-12 col-12 col-lg-12 py-5 text-center">
+                <div class="alert alert-info p-3">
+                    {% trans "API minimaliste d'un exemple de blog personnel. Seules quelques fonctionnalités basiques ont été prises en compte." %} <br>
+                    {% trans "Il y a entre autres :" %}
+                    <ul class="list-unstyled mt-2 fw-bold">
+                        <li>{% trans "Le système d'authentification (par email)." %}</li>
+                        <li>{% trans "Une lucarne pour recevoir des messages (contacts)" %}</li>
+                        <li>{% trans "Une lucarne pour pour la newsletter (souscriptions en l'occurence; pas tout)" %}</li>
+                        <li>…</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4 col-6 col-lg-3 my-2">
+                <div class="card rounded-2 p-3 text-center">
+                    <p class="mb-3">
+                        {% trans "Documentation interactive de l'API avec un visuel dynamique. Possible de tester les endpoints." %}
+                    </p>
+                    <a href="{% url 'docs:api-schema-swagger-ui' %}" target="_blank" class="btn btn-primary btn-sm">
+                        {% trans "API UI Docs" %}
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-6 col-lg-3 my-2">
+                <div class="card rounded-2 p-3 text-center">
+                    <p class="mb-3">
+                        {% trans "Documentation régulière avec les types de réponses de l'API avec un visuel dynamique." %}
+                    </p>
+                    <a href="{% url 'docs:api-schema-redoc' %}" target="_blank" class="btn btn-info btn-sm">
+                        {% trans "API Regular Docs" %}
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-6 col-lg-3 my-2">
+                <div class="card rounded-2 p-3 text-center">
+                    <p class="mb-3">
+                        {% trans "Documentation des modèles gabarits, balises, filtres, liens, vues et signets" %}
+                    </p>
+                    <a href="{% url 'django-admindocs-docroot' %}" target="_blank" class="btn btn-success btn-sm">
+                        {% trans "Consulter" %}
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-6 col-lg-3 my-2">
+                <div class="card rounded-2 p-3 text-center">
+                    <p class="mb-3">
+                        {% trans "Administration Django" %}
+                    </p>
+                    <a href="{% url 'admin:index' %}" target="_blank" class="btn btn-outline-danger btn-sm">
+                        {% trans "Admin" %}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

@@ -1,0 +1,159 @@
+{% extends "public/base.html" %}
+
+{% load i18n cache %}
+
+{% block title %}
+    {% trans "Inscription" %} :: {{ site_name }}
+{% endblock title %}
+
+
+
+{% block extra_head %}
+    <style>
+        label {
+            font-weight: normal !important;
+            font-size: small !important;
+            text-transform: uppercase !important;
+        }
+    </style>
+{% endblock extra_head %}
+
+
+{% block content %}
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-12 col-12 col-lg-12 py-5">
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-md-2"></div>
+
+                        <div class="col-12 col-sm-12 col-md-8">
+
+                            <div class="card rouded-3 p-4">
+                                <h1 class="h5 my-2 text-center">{% trans "Créez votre compte admin" %}</h1>
+                                <div class="card-body">
+                                    <div class="row my-3">
+                                        <div class="col-3 col-sm-4 col-md-4">
+                                            <label for="{{ form.email.auto_id }}" class="float-end">
+                                                {% trans "Adresse électronique" %}
+                                                <sup class="text-danger">*</sup>
+                                            </label>
+                                        </div>
+                                        <div class="col-9 col-sm-8 col-md-8">
+                                            {{ form.email }}
+                                        </div>
+                                    </div>
+
+                                    <div class="row my-3">
+                                        <div class="col-3 col-sm-4 col-md-4">
+                                            <label for="{{ form.username.auto_id }}" class="float-end">
+                                                {% trans "Nom d'utilisateur" %}
+                                                <sup class="text-danger">*</sup>
+                                            </label>
+                                        </div>
+                                        <div class="col-9 col-sm-8 col-md-8">
+                                            {{ form.username }}
+                                        </div>
+                                    </div>
+
+                                    <div class="row my-3">
+                                        <div class="col-3 col-sm-4 col-md-4">
+                                            <label for="{{ form.password.auto_id }}" class="float-end">
+                                                {% trans "Mot de passe" %}
+                                                <sup class="text-danger">*</sup>
+                                            </label>
+                                        </div>
+                                        <div class="col-9 col-sm-8 col-md-8">
+                                            {{ form.password }}
+                                        </div>
+                                    </div>
+
+                                    <div class="row my-3">
+                                        <div class="col-3 col-sm-4 col-md-4">
+                                            <label for="{{ form.password2.auto_id }}" class="float-end">
+                                                {% trans "Confirmer" %}
+                                                <sup class="text-danger">*</sup>
+                                            </label>
+                                        </div>
+                                        <div class="col-9 col-sm-8 col-md-8">
+                                            {{ form.password2 }}
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row my-3">
+                                        <div class="col-3 col-sm-4 col-md-4"></div>
+                                        <div class="col-9 col-sm-8 col-md-8">
+                                            <input id="togglePasswordId" type="checkbox" class="form-check-input me-2" onclick="togglePassword()">
+                                            <label for="togglePasswordId">
+                                                {% trans "Afficher le mot de passe" %}
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    {% if "next" in request.META.HTTP_REFERER %}
+                                        <input type="hidden" name="next" id="next_url_id" value="{{ request.GET.next }}" />
+                                    {% endif %}
+
+                                    <div class="row my-4">
+                                        <div class="col-3 col-sm-4 col-md-4"></div>
+                                        <div class="col-9 col-sm-8 col-md-8">
+                                            <div class="row gap-1 d-grid">
+                                                <button class="btn btn-primary btn-sm">
+                                                    {% trans "Inscription" %}
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        <span class="float-start">
+                                            {% trans "Vous avez déjà un compte ?" %}
+                                            <a href="{% url 'templates-core:login' %}" class="text-decoration-none">
+                                                {% trans "Connectez-vous" %}
+                                            </a>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+
+{% block extra_scripts %}
+    <script>
+        var password = document.getElementById("{{ form.password.auto_id }}");
+        var password2 = document.getElementById("{{ form.password2.auto_id }}");
+        function togglePassword() {
+            if (password.type === "password") {
+                password.type = "text";
+                password2.type = "text";
+            } else {
+                password.type = "password";
+                password2.type = "password";
+            }
+        }
+    </script>
+
+    {% if "next" in request.META.HTTP_REFERER %}
+        <script>
+            // if "next" in previous, then run this script.
+            // check if value of input (named "next") is empty. If not, don't do anything else set its value to request.META.HTTP_REFERER
+
+            // console.log("'next' in previous URL!")
+            next_url_input = document.getElementById("next_url_id");
+            if (next_url_input.value == "") {
+                next_url_input.value = "{{ request.META.HTTP_REFERER }}";
+                // console.log(next_url_input.value)
+            }
+        </script>
+    {% endif %}
+{% endblock extra_scripts %}

@@ -1,0 +1,601 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-20 22:15+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: accounts/admin.py:39
+msgid "Informations personnelles"
+msgstr "Personal data"
+
+#: accounts/admin.py:43
+msgid "Dates importantes"
+msgstr "important dates"
+
+#: accounts/admin.py:47
+msgid "Status"
+msgstr "Status"
+
+#: accounts/admin.py:51
+msgid "Pays & Adresses"
+msgstr "Country & Addresses"
+
+#: accounts/admin.py:55
+msgid "Profil"
+msgstr "Profile"
+
+#: accounts/admin.py:59
+msgid "Groupes"
+msgstr "Groups"
+
+#: accounts/admin.py:63
+msgid "Permissions"
+msgstr "Permissions"
+
+#: accounts/admin.py:67
+msgid "Métadonnées"
+msgstr "Metadata"
+
+#: accounts/apps.py:7
+msgid "Comptes utilisateurs"
+msgstr "Users accounts"
+
+#: accounts/managers.py:8
+msgid "Veuillez fournir une adresse mail s'il vous plaît!"
+msgstr "Please provide an email."
+
+#: accounts/managers.py:11
+msgid "Veuillez fournir un nom d'utilisateur s'il vous plaît!"
+msgstr "Please provide a username."
+
+#: accounts/managers.py:14
+msgid "Email déjà en cours d'utilisation"
+msgstr "Email already in use."
+
+#: accounts/managers.py:17
+msgid "Nom d'utilisateur déjà en cours d'utilisation"
+msgstr "Username already in use."
+
+#: accounts/models.py:14
+msgid "Masculin"
+msgstr "Male"
+
+#: accounts/models.py:15
+msgid "Féminin"
+msgstr "Female"
+
+#: accounts/models.py:16
+msgid "Non défini"
+msgstr "Undefined"
+
+#: accounts/models.py:20
+msgid "Prénom(s)"
+msgstr "First Name"
+
+#: accounts/models.py:21
+msgid "Nom de famille"
+msgstr "Last Name"
+
+#: accounts/models.py:25
+msgid "Nom d'utilisateur"
+msgstr "Username"
+
+#: accounts/models.py:28
+msgid ""
+"Un utilisateur avec ce pseudo existe déjà. Veuillez choisir un autre s'il "
+"vous plaît !"
+msgstr ""
+"A user with this username already exists. Please choose another one"
+"."
+
+#: accounts/models.py:30
+msgid ""
+"Requis. 150 caractères ou moins. Ne peut contenir des lettres, des chiffres "
+"et @/./+/-/_"
+msgstr ""
+"Required. 150 characters or fewer. Cannot contain letters, numbers "
+"and @/./+/-/_"
+
+#: accounts/models.py:32 newsletter/models.py:6
+msgid "Adresse électronique"
+msgstr "Email address"
+
+#: accounts/models.py:34
+msgid "Un utilisateur avec cette adresse existe déjà."
+msgstr "A user with this email already exists."
+
+#: accounts/models.py:37
+msgid "Membre de l'équipe"
+msgstr "Staff member"
+
+#: accounts/models.py:38
+msgid "Désigne si un utilisateur peut se connecter à ce site d'administration."
+msgstr "Indicates whether a user can log in to this administration site."
+
+#: accounts/models.py:39 blog/models.py:13
+msgid "Actif"
+msgstr "Active"
+
+#: accounts/models.py:40
+msgid ""
+"Désigne si un utilisateur est toujours actif ou pas. Décochez au lieu de le "
+"supprimer."
+msgstr ""
+"Indicates whether a user is still active or not. Uncheck instead of "
+"deleting."
+
+#: accounts/models.py:41
+msgid "Utilisateur root"
+msgstr "Super user"
+
+#: accounts/models.py:42
+msgid "Compte confirmé"
+msgstr "Account confirmed"
+
+#: accounts/models.py:43 contact/models.py:10
+msgid "Nº de téléphone"
+msgstr "Phone number"
+
+#: accounts/models.py:44
+msgid "Genre"
+msgstr "Gender"
+
+#: accounts/models.py:45
+msgid "Pays"
+msgstr "Country"
+
+#: accounts/models.py:46 accounts/v1/views.py:87
+msgid "Région"
+msgstr "Region"
+
+#: accounts/models.py:47 accounts/v1/views.py:88
+msgid "Ville"
+msgstr "City"
+
+#: accounts/models.py:48 accounts/v1/views.py:89
+msgid "Adresse"
+msgstr "Address"
+
+#: accounts/models.py:49 accounts/v1/views.py:90
+msgid "2e adresse"
+msgstr "2nd address"
+
+#: accounts/models.py:50
+msgid "Code postal"
+msgstr "Zip code"
+
+#: accounts/models.py:51 accounts/v1/views.py:92
+msgid "Âge"
+msgstr "Age"
+
+#: accounts/models.py:52
+msgid "Bio"
+msgstr "Bio"
+
+#: accounts/models.py:53 accounts/v1/views.py:93
+msgid "Site web"
+msgstr "Website"
+
+#: accounts/models.py:54 accounts/v1/views.py:95
+msgid "Avatar"
+msgstr "Avatar"
+
+#: accounts/models.py:56 blog/models.py:15 blog/models.py:48 blog/models.py:84
+#: contact/models.py:14 newsletter/models.py:10
+msgid "Date de modification"
+msgstr "Updated on"
+
+#: accounts/models.py:57 blog/models.py:49 blog/models.py:85
+#: contact/models.py:15 newsletter/models.py:11
+msgid "Données supplémentaires"
+msgstr "Extra data"
+
+#: accounts/models.py:65 blog/models.py:79
+msgid "Utilisateur"
+msgstr "User"
+
+#: accounts/models.py:66
+msgid "Utilisateurs"
+msgstr "Users"
+
+#: accounts/v1/serializers.py:31
+msgid "Les mots ne concordent pas."
+msgstr "Passwords do not match."
+
+#: accounts/v1/utils.py:5 blog/v1/utils.py:5 blog/v1/utils.py:10
+#: blog/v1/utils.py:14 contact/v1/utils.py:5
+msgid "Page"
+msgstr "Page"
+
+#: accounts/v1/views.py:81
+msgid "Prénom"
+msgstr "First Name"
+
+#: accounts/v1/views.py:82 blog/models.py:11
+msgid "Nom"
+msgstr "Last Name"
+
+#: accounts/v1/views.py:83 accounts/v1/views.py:132 contact/models.py:9
+#: contact/v1/views.py:48 contact/v1/views.py:91 newsletter/v1/views.py:45
+msgid "Email"
+msgstr "Email"
+
+#: accounts/v1/views.py:84
+msgid "N° de téléphone (au format +44…)"
+msgstr "Phone number (format +44…)"
+
+#: accounts/v1/views.py:85
+msgid "Soit 'male', 'female' ou 'undefined'"
+msgstr "Either 'male,' 'female,' or 'undefined.'"
+
+#: accounts/v1/views.py:86
+msgid "Pays (code ISO du pays (Ex: US, DE, FR, CI))"
+msgstr "Country (ISO country code, e.g., US, DE, FR, CI)"
+
+#: accounts/v1/views.py:91
+msgid "Code postal (5 chiffres maxi)"
+msgstr "Zip Code (up to 5 digits)"
+
+#: accounts/v1/views.py:94
+msgid "Biographie"
+msgstr "Bio"
+
+#: accounts/v1/views.py:96
+msgid "Données extra (Format JSON)"
+msgstr "Extra data (JSON format)"
+
+#: accounts/v1/views.py:119
+msgid "Utilisateur supprimé avec succès"
+msgstr "User deleted successfully"
+
+#: accounts/v1/views.py:131
+msgid "Pseudo"
+msgstr "Username"
+
+#: accounts/v1/views.py:133
+msgid "Mot de passe"
+msgstr "Password"
+
+#: accounts/v1/views.py:134
+msgid "Confirmer le mot de passe"
+msgstr "Confirm password"
+
+#: accounts/v1/views.py:156
+msgid "Old password"
+msgstr "Old password"
+
+#: accounts/v1/views.py:157
+msgid "New password"
+msgstr "New password"
+
+#: accounts/v1/views.py:166
+msgid "Mot de passe incorrect"
+msgstr "Wrong password"
+
+#: accounts/v1/views.py:173
+msgid "Mot de passe modifié avec succès"
+msgstr "Password changed successfully"
+
+#: blog/apps.py:8
+msgid "Blog"
+msgstr "Blog"
+
+#: blog/models.py:14 blog/models.py:47 blog/models.py:83 contact/models.py:13
+#: newsletter/models.py:9
+msgid "Date"
+msgstr "Date"
+
+#: blog/models.py:18 blog/models.py:38 blog/v1/views.py:175
+#: blog/v1/views.py:214
+msgid "Catégorie"
+msgstr "Category"
+
+#: blog/models.py:19
+msgid "Catégories"
+msgstr "Categories"
+
+#: blog/models.py:37
+msgid "Auteur"
+msgstr "Author"
+
+#: blog/models.py:39 blog/v1/views.py:47 blog/v1/views.py:103
+msgid "Titre"
+msgstr "Title"
+
+#: blog/models.py:40
+msgid "Couverture"
+msgstr "Cover"
+
+#: blog/models.py:41
+msgid "Résumé"
+msgstr "Summary"
+
+#: blog/models.py:41
+msgid "Maximum 400 caractères"
+msgstr "A maximum of 400 chars"
+
+#: blog/models.py:42 blog/models.py:80
+msgid "Contenu"
+msgstr "Content"
+
+#: blog/models.py:43
+msgid "Mots clés"
+msgstr "Tags"
+
+#: blog/models.py:45 blog/models.py:81
+msgid "Public"
+msgstr "Public"
+
+#: blog/models.py:46 blog/models.py:82
+msgid "UUID"
+msgstr "UUID"
+
+#: blog/models.py:53
+msgid "Poste"
+msgstr "Post"
+
+#: blog/models.py:54
+msgid "Postes"
+msgstr "Posts"
+
+#: blog/models.py:78
+msgid "Publication"
+msgstr "Post"
+
+#: blog/models.py:88 blog/v1/views.py:277 blog/v1/views.py:324
+msgid "Commentaire"
+msgstr "Comment"
+
+#: blog/models.py:89
+msgid "Commentaires"
+msgstr "Comments"
+
+#: blog/v1/views.py:48 blog/v1/views.py:104
+msgid "Catégorie (ID de la catégorie)"
+msgstr "Category (category ID)"
+
+#: blog/v1/views.py:49 blog/v1/views.py:105
+msgid "Couverture (image)"
+msgstr "Cover (picture)"
+
+#: blog/v1/views.py:50 blog/v1/views.py:106
+msgid "Résumé du poste"
+msgstr "Post summary"
+
+#: blog/v1/views.py:51 blog/v1/views.py:107
+msgid "Contenu du poste"
+msgstr "Post content"
+
+#: blog/v1/views.py:54 blog/v1/views.py:110
+msgid "Mots clés (séparés par des virgules)"
+msgstr "Tags (separated by commas)"
+
+#: blog/v1/views.py:69
+msgid ""
+"La catégorie avec l'identifiant {serializer.validated_data['category']} "
+"n'existe pas"
+msgstr ""
+"The category with the identifier {serializer.validated_data['category']}"
+"does not exist"
+
+#: blog/v1/views.py:131
+msgid "Poste supprimé avec succès"
+msgstr "Post deleted successfully"
+
+#: blog/v1/views.py:233
+msgid "Catégorie supprimée avec succès"
+msgstr "Category deleted successfully"
+
+#: blog/v1/views.py:278
+msgid "Poste (ID du poste)"
+msgstr "Post (Post ID)"
+
+#: blog/v1/views.py:288
+msgid ""
+"Le poste avec l'identifiant {serializer.validated_data['post']} n'existe pas"
+msgstr ""
+"The post with the identifier {serializer.validated_data['post']} does not exist."
+
+#: blog/v1/views.py:343
+msgid "Commentaire supprimé avec succès"
+msgstr "Comment deleted successfully"
+
+#: blogger_api/settings.py:267
+msgid "Français"
+msgstr "French"
+
+#: blogger_api/settings.py:268
+msgid "Anglais"
+msgstr "English"
+
+#: blogger_api/settings.py:328
+#, python-brace-format
+msgid "Server Error - {SITE_NAME} <{EMAIL_HOST_USER}>"
+msgstr "Server Error - {SITE_NAME} <{EMAIL_HOST_USER}>"
+
+#: contact/models.py:7
+msgid "Sujet"
+msgstr "Subject"
+
+#: contact/models.py:8
+msgid "Nom complet"
+msgstr "Full Name"
+
+#: contact/models.py:11
+msgid "Répondu"
+msgstr "Answered"
+
+#: contact/models.py:12 contact/models.py:19 contact/v1/views.py:50
+#: contact/v1/views.py:93
+msgid "Message"
+msgstr "Message"
+
+#: contact/models.py:20
+msgid "Messages"
+msgstr "Messages"
+
+#: contact/v1/views.py:47 contact/v1/views.py:90
+msgid "Objet"
+msgstr "Subject"
+
+#: contact/v1/views.py:49 contact/v1/views.py:92
+msgid "Nom & Prénom"
+msgstr "First Name & Last Name"
+
+#: contact/v1/views.py:51 contact/v1/views.py:94
+msgid "N° de téléphone"
+msgstr "Phone number"
+
+#: contact/v1/views.py:52 contact/v1/views.py:96
+msgid "Autres infos (Format JSON)"
+msgstr "More infos (JSON format)"
+
+#: contact/v1/views.py:95
+msgid "Déjà répondu"
+msgstr "Already answered."
+
+#: contact/v1/views.py:114
+msgid "Contact supprimé avec succès"
+msgstr "Contact deleted successfully"
+
+#: core/admin.py:5 core/admin.py:7
+#, python-brace-format
+msgid "Administration | {settings.SITE_NAME}"
+msgstr "Admin | {settings.SITE_NAME}"
+
+#: core/admin.py:6
+#, python-brace-format
+msgid "Site d'administration de {settings.SITE_NAME}"
+msgstr "Django admin of {settings.SITE_NAME}"
+
+#: core/templates/home.html:6 templates/public/base.html:24
+msgid "Accueil"
+msgstr "Home"
+
+#: core/templates/home.html:15
+msgid ""
+"API minimaliste d'un exemple de blog personnel. Seules quelques "
+"fonctionnalités basiques ont été prises en compte."
+msgstr ""
+"Minimalist API for an example of a personal blog."
+"Only a few basic features have been considered."
+
+#: core/templates/home.html:16
+msgid "Il y a entre autres :"
+msgstr "There are, among other things:"
+
+#: core/templates/home.html:18
+msgid "Le système d'authentification (par email)."
+msgstr "Email authentication system."
+
+#: core/templates/home.html:19
+msgid "Une lucarne pour recevoir des messages (contacts)"
+msgstr "A window for receiving messages (contacts)."
+
+#: core/templates/home.html:20
+msgid ""
+"Une lucarne pour pour la newsletter (souscriptions en l'occurence; pas tout)"
+msgstr ""
+"A window for the newsletter (specifically for subscriptions; not everything)"
+
+#: core/templates/home.html:32
+msgid ""
+"Documentation interactive de l'API avec un visuel dynamique. Possible de "
+"tester les endpoints."
+msgstr ""
+"Interactive API documentation with dynamic visuals. Endpoints are testable for  "
+"comprehensive exploration."
+
+#: core/templates/home.html:35
+msgid "API UI Docs"
+msgstr "API UI Docs"
+
+#: core/templates/home.html:43
+msgid ""
+"Documentation régulière avec les types de réponses de l'API avec un visuel "
+"dynamique."
+msgstr ""
+"Regular documentation featuring API response types with dynamic visual representation"
+"."
+
+#: core/templates/home.html:46
+msgid "API Regular Docs"
+msgstr "API Regular Docs"
+
+#: core/templates/home.html:54
+msgid ""
+"Documentation des modèles gabarits, balises, filtres, liens, vues et signets"
+msgstr ""
+"Documentation on models, templates, tags, filters, links, views, and bookmarks."
+
+#: core/templates/home.html:57
+msgid "Consulter"
+msgstr "Access"
+
+#: core/templates/home.html:65
+msgid "Administration Django"
+msgstr "Django Admin"
+
+#: core/templates/home.html:68
+msgid "Admin"
+msgstr "Admin"
+
+#: docs/views.py:13
+#, python-brace-format
+msgid ""
+"\n"
+"        Documentation officielle de l'API de <strong>{settings.SITE_NAME}</"
+"strong>.\n"
+"    "
+msgstr ""
+"\n"
+"        Official API documentation for <strong>{settings.SITE_NAME}</"
+"strong>.\n"
+"    "
+
+#: docs/views.py:17
+msgid ""
+"\n"
+"        Aucune licence. Il est formellement interdit de consulter, vendre, "
+"copier ou reproduire ce projet \n"
+"        si l'on n'a pas reçu une autorisation express.\n"
+"    "
+msgstr ""
+"\n"
+"        No license. It is strictly forbidden to access, sell, "
+"copy, or reproduce this project \n"
+"        without explicit authorization.\n"
+"    "
+
+#: newsletter/models.py:7
+msgid "Inscrit"
+msgstr "Subscribed"
+
+#: newsletter/models.py:8
+msgid "Supprimé"
+msgstr "Deleted"
+
+#: newsletter/models.py:15 newsletter/models.py:16
+msgid "Newsletter"
+msgstr "Newsletter"
+
+#: newsletter/v1/views.py:59
+msgid "Vous étiez déjà inscrit à cette newsletter, Merci !"
+msgstr "You were already subscribed to this newsletter. Thank you!"
+
+#: newsletter/v1/views.py:105
+msgid "Newsletter supprimé avec succès !"
+msgstr "Newsletter successfully deleted!"
